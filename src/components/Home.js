@@ -17,7 +17,7 @@ export default class Home extends Component  {
         <div className='HomeContainer'>
             <span>
                { shelves }
-            </span>
+            </span>   
         
         </div>
     )
