@@ -11,14 +11,19 @@ export default class Home extends Component  {
     }
     render(){
         
-        let shelves = this.state.shelves.map((e,i) => <Link key={i} to={`/Bin/${e.id}`}><h3>{`Shelf ${e}`}</h3></Link> )
+        let shelves = this.state.shelves.map((e,i) => <Link key={i} to={`/shelf/${e}`}><h3>{`Shelf ${e}`}</h3></Link> )
     
         return(
+            <div>
+            <div>
+            <Link to='/' className= "title" ><h1>Shelfie</h1></Link>
+            </div>
         <div className='HomeContainer'>
             <span>
                { shelves }
             </span>   
         
+        </div>
         </div>
     )
 }
